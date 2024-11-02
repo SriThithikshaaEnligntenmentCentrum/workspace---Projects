@@ -1,0 +1,170 @@
+body{
+  padding: auto;
+  margin: auto;
+  width: 100%;
+  height: 100%;   
+}
+html{
+   background: url('images/White_Peacock.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  aspect-ratio: 2;
+}
+*{
+    resize: vertical;
+}
+.wrapper{
+  width: 100%;
+  height: 110%;
+  /* background-color:black; */
+  opacity: 0.9;
+}
+.header{
+  width: 100%;
+  height: 150px;
+  /* background-color:#151B54; */
+  /* color: white; */
+  color: black;
+}
+.murugar_logo{
+  float: left;
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: 8%;
+  border-radius: 50%;
+  border: 5px dotted #66FF00;
+  box-sizing: border-box;
+   
+}
+span.text, span.author{
+    font-family: 'Tangerine', serif;
+    font-size: 40px;
+    text-shadow: 4px 4px 4px #aaa;
+    font-weight: bold;
+}
+span.text{  
+  margin-left: 20px;
+}
+span.author{
+  /* background-color: black; */
+  padding: 20px;
+  display: inline-block;
+  position: relative;
+  bottom: -60px;
+  left: -150px;
+}
+.vel_logo{
+  float: right;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: -11%;
+  transform: rotate(-45deg);
+  margin-right: 8%;
+  border-radius: 50%;
+  width: 15%;
+  height: 180%;
+}
+.header_content_splitter_div{
+  height: 20%;
+  width: 100%;
+  background: url('images/3Vel_Horizontal.png');    
+  background-repeat: repeat-x;
+  background-position: relative;
+  margin-top: -52%;
+  z-index: -1; /* to bring the image front */  
+}
+
+.six_abodes_div, .project2_div, .project3_div,
+.project4_div, .project5_div, .project6_div,
+.project7_div, .project8_div, .project9_div{
+   width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  position: fixed;
+  opacity: 0.5;
+  outline: 4px dotted white;
+
+}
+a.six_abodes, a.project2, a.project3,
+a.project4, a.project5, a.project6,
+a.project7, a.project8, a.project9{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 18px;
+  display: block;
+  margin-top: 20px;
+}
+.six_abodes_div{
+    background-color:blue;
+    margin-left: 20%;
+  margin-top: 28%;
+}
+.project2_div{  
+  margin-left: 22%;
+  margin-top: 17%;
+  background-color: green;  
+}
+.project3_div{  
+  margin-left: 26%;
+  margin-top: 7%;
+  background-color:chocolate;  
+}
+.project4_div{  
+  margin-left: 36%;
+  margin-top: 0%;
+  background-color:maroon;
+}
+.project5_div{  
+  margin-left: 48%;
+  margin-top: -2%;
+  background-color:crimson;
+}
+.project6_div{  
+  margin-left: 60%;
+  margin-top: 0%;
+  background-color:darkturquoise;
+}
+.project7_div{  
+  margin-left: 70%;
+  margin-top: 7%;
+  background-color:darkmagenta;
+}
+.project8_div{  
+  margin-left: 76%;
+  margin-top: 17%;
+  background-color:gold;
+}
+.project9_div{  
+  margin-left: 74%;
+  margin-top: 28%;
+  background-color:hotpink;
+  
+}
+a.six_abodes:hover, a.project2:hover, a.project3:hover,
+a.project4:hover, a.project5:hover, a.project6:hover,
+a.project7:hover, a.project8:hover, a.project9:hover{
+      background: url('images/Vel.png');
+      background-size: cover;
+      background-position: fixed;
+}
+.footer{
+  width: 100%;
+  background-color: grey;
+  text-align: center;
+  display: block;
+  position: absolute;
+  margin-top: 40%;
+  height: 1%;
+  padding: 1%;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+

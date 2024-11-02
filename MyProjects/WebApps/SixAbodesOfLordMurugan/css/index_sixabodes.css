@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  background: url('../images/Sea.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100px;
+  /* background-color: orange; */
+  margin: auto;
+}
+#header{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 50px;
+  color: black;
+  /* background-color: greenyellow; */
+  align-items: center;
+  justify-content: center;
+}
+.heading{
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 5px 5px 10px white;
+}
+
+/* This part doesnt works for JS but for individual page its working */
+/* .heading{
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  /* text-transform: capitalize; */
+  /* position: relative;
+}
+.heading::after{
+  content: attr(data-content);
+  position: fixed;
+  top: .1rem;
+  left: 21rem;
+  color: black;
+  filter: blur(5px);
+  z-index: -1;
+  width: 100%;
+  animation: shadow 2s linear infinite;
+}
+@keyframes shadow{
+   0%{
+    background: linear-gradient(90deg, rgba(145,0,0,1) 0%, rgba(232,255,0,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50%{
+    background: linear-gradient(90deg, rgba(104,228,0,1) 0%, rgba(0,164,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+ 100%{
+    background: linear-gradient(90deg, rgba(0,24,228,1) 0%, rgba(255,0,91,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+} */
+
+.row{
+  display: flex ;
+  flex-direction: row;
+  width: 100%;
+  min-height: 300px;
+  /* background-color: red; */
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  /* background-color: bisque; */
+  justify-content: center;
+  align-items: center;
+}
+.text{
+  display: flex;
+  flex-direction: row;
+  /* background-color: crimson; */
+  color: crimson;
+   /* color: #151B54; */
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  bottom: -80px;
+  justify-content: center;
+  text-shadow: 5px 5px 10px blue;
+}
+.abodes-img{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid #03045e;
+  outline: 4px solid yellow;
+  cursor: pointer; 
+}
+#footer{
+  display: flex;
+  flex-direction: row;
+   min-height: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  /* background-color: gray; */
+  margin-top: 10px; 
+}
+  a{
+    color: crimson;
+    text-decoration: none;
+  }
+

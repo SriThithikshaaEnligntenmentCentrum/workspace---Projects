@@ -1,0 +1,35 @@
+body{
+  margin: 0;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden; /* When mouse is dragged, scrollbar appears. To hide it use this */
+}
+span{
+  /* background: url('https://cdn0.iconfinder.com/data/icons/peace-not-war/32/flag_Ukraine_heart_love-512.png'); */
+  background: url('https://cdn0.iconfinder.com/data/icons/simple-lines-filled-part-1/32/30_Heart_Broken_Like_Hate_Happy_Love-64.png');
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  /* Creates images only at the position the mouse is clicked */
+  pointer-events: none; /* to avoid creating more than one heart images */
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* To make the heart exactly at the centre */
+  animation: animate 6s linear; /* animation-duration - 6s */
+}
+
+/* Animation */
+@keyframes animate {
+  0%{
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0); /* to change the color of the heart */
+  }
+  100%{
+    transform: translate(-50%, -5000%); /* 5000% - to bring outside the browser */
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
+  
+}

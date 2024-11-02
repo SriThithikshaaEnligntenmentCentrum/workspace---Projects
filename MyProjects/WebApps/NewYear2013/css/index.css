@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+body{
+  background: url('../images/mountain.jpg') no-repeat;
+  /* background-size: cover; */
+  background-size: 1310px 710px;
+}
+a{
+  text-decoration: none;
+}
+.bird{
+  overflow-x: -webkit-marquee;
+  -webkit-marquee-direction: left;
+  -webkit-marquee-increment: medium;
+  -webkit-marquee-speed: normal;
+  -webkit-marquee-style: scroll;
+  -webkit-marquee-repetition: 1;
+}
+#touch_boat{
+  color: #FFF;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+  margin-left: 20px;
+}
+#boat_div{
+  overflow-x: -webkit-marquee;
+  -webkit-marquee-direction: right;
+  -webkit-marquee-increment: small;
+  -webkit-marquee-speed: normal;
+  -webkit-marquee-style: scroll;
+  -webkit-marquee-repetition: 1;
+  margin-top: 400px;  
+}
+#animated_duck{
+  background: url('../images/duck.gif') no-repeat;
+  height: 100px;
+  width: 200px;
+  margin-top: -370px;
+  margin-left: -30px;
+}

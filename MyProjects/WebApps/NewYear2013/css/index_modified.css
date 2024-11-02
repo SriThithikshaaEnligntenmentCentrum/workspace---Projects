@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+body{
+  display: flex;
+  flex-direction: column;
+ background: url('../images/mountain.jpg');
+ background-repeat: no-repeat;
+ background-size: 1366px 768px;
+ /* background-position: absolute; */
+ /* overflow: hidden; */ /* It eliminates the scrollbar */
+ overflow-x: hidden;
+}
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+  width: 100%;
+  /* background-color: skyblue; */
+  /* opacity: 0.2;  */
+}
+#swimming_duck{
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  margin-top: 470px;
+  margin-left: -30px;
+  /* background-color: brown; */
+  opacity: 0.5;
+}
+#boats{
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+  width: 100%;  /* 100% of viewport width */
+  min-height: 350px;
+  color: white;
+  margin-top: -280px;
+}
+.boat1, .boat2, .boat3{
+   height: 108px;
+   /* border: 2px solid #4a4a4a; */
+   /* background-color: red; */
+}
+.boat1 p, .boat2 p, .boat3 p{
+  /* background-color: yellow; */
+  margin-top: -10px;
+}
+.boat1 p, .boat1 a{
+  animation: scroll-right 30s linear infinite;
+}
+.boat2 p, .boat2 a{
+  animation: scroll-right 15s linear infinite;
+}
+.boat3 p, .boat3 a{
+  animation: scroll-right 60s linear infinite;
+}
+.boat1 p, .boat1 a,
+.boat2 p, .boat2 a,
+.boat3 p, .boat3 a{
+  position: absolute;
+  width: 100%;  
+  /* transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);   */
+  
+}
+@keyframes scroll-right {
+  0%{
+    transform : translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+  }  
+}
+@-webkit-keyframes scroll-right{
+  0%{
+    -webkit-transform: translateX(0%);
+  }
+  100%{
+    -webkit-transform: translateX(100%);
+  }
+}
+@-moz-keyframes scroll-right{
+  0%{
+    -moz-transform: translateX(0%);
+  }
+  100%{
+    -moz-transform: translateX(100%);
+  }
+}
+#footer{
+  display: flex;
+  flex-direction: row;
+  min-height: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(117, 69, 55, 0.1);
+  
+}
+
+
+
+
+
+

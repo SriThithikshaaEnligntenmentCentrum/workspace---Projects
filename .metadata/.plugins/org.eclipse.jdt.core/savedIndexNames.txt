@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\Windows.old\Users\Vanithaa\Documents\17.07.24 - Arranged\All Workspaces - 20.07.24\workspace - Projects\.metadata\.plugins\org.eclipse.jdt.core
+4003465482.index
+3179687466.index
+1865797976.index
+1346691495.index
+3046168083.index
+188623337.index
+1240685049.index

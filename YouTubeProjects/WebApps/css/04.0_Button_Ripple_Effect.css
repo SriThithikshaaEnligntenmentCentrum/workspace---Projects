@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: aliceblue;
+  font-family: sans-serif; 
+}
+.btn{
+  background-color: pink;
+  padding: 20px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  color: black;
+  position: relative;
+  overflow: hidden; 
+}
+ .btn span{
+  position: relative;
+ /* z-index: 1;  /* Not sure why Z-index is given */
+} 
+/* Before and After are not part of the DOM Elements
+   So, Set Variables for top & left as shown below
+*/
+.btn::before{
+  content: "";
+  position: absolute;
+  background-color: orangered;
+  width: 0px;  /* If width and height is set to 0, the circle disappears */
+  height: 0px;
+ /* top: 50%;  /* top & left is to centre the circle */
+ /* left: 50%; */
+  /* To change the positions on mouse hover using JS */
+  top: var(--yPos);
+  left: var(--xPos); 
+
+  transform: translate(-50%, -50%);
+  border-radius: 50%; 
+  transition: width .5s, height .5s; /* Animation - When hovered over the button, hovering effect can be seen */
+  
+}
+.btn:hover::before{
+  /* To prevent enlarging, set over-flow: hidden in .btn */
+  width: 300px;
+  height: 300px;
+} 

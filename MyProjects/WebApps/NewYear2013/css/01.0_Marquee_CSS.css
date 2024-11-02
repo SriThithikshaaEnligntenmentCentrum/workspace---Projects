@@ -1,0 +1,68 @@
+body{
+  background: url('../images/mountain.jpg');
+  background-repeat: no-repeat;
+  background-size: 1366px 768px;
+  font-family: Arial;
+  font-size: 16px;
+  color: white;
+}
+.boat1, .boat2, .boat3{
+   height: 108px;
+   /* border: 2px solid #4a4a4a; */
+   /* background-color: red; */
+}
+.boat1{
+  margin-top: 350px;
+}
+.boat1 p, .boat2 p, .boat3 p{
+  /* background-color: yellow; */
+  margin-top: -10px;
+}
+
+.boat1 p, .boat1 a{
+  animation: scroll-right 30s linear infinite;
+}
+.boat2 p, .boat2 a{
+  animation: scroll-right 15s linear infinite;
+}
+.boat3 p, .boat3 a{
+  animation: scroll-right 60s linear infinite;
+}
+.boat1 p, .boat1 a,
+.boat2 p, .boat2 a,
+.boat3 p, .boat3 a{
+  position: absolute;
+  width: 100%;
+  /* transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);   */
+  
+}
+@keyframes scroll-right {
+  0%{
+    transform : translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+  }  
+}
+@-webkit-keyframes scroll-right{
+  0%{
+    -webkit-transform: translateX(0%);
+  }
+  100%{
+    -webkit-transform: translateX(100%);
+  }
+}
+@-moz-keyframes scroll-right{
+  0%{
+    -moz-transform: translateX(0%);
+  }
+  100%{
+    -moz-transform: translateX(100%);
+  }
+}
