@@ -1,10 +1,8 @@
 body{
-  background: url(images/balloons.jpg);
+  background: url(images/balloons.jpg) no-repeat;
+  background-size: cover;
 }
-marquee.mq2{
+marquee{
   z-index:2;
   position:absolute;
-  left:288;
-  top:110;
-  height:335;
 }
