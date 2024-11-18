@@ -1,0 +1,10 @@
+body{
+  background: url(images/balloons.jpg);
+}
+marquee.mq2{
+  z-index:2;
+  position:absolute;
+  left:288;
+  top:110;
+  height:335;
+}
