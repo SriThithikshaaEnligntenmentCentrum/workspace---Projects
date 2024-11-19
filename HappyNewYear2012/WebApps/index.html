@@ -1,16 +1,42 @@
-<!-- Seems not working with DOCTYPE -->
-<!-- <!DOCTYPE html> -->
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy New Year 2012</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/index.js"></script>
 </head>
-<body>
-      <!-- <div id="empty" style="visibility:hidden"> -->
-      <div id="empty">
+ <!-- Done as on 19.11.24 -->
+ <body id="body" onload="changeBackground()">	
+	
+	  <div id="div1"> Hi! Good Morning!!!! How are you doing ?  
+		<div id="btnimg1" onclick="changePage()"> 
+			<div id="text1"> Click Me !! </div> 
+		</div>
+	  </div>
+	  
+	  <div id="div2"> Hi! Good Afternoon!!!! How are you doing ? 
+		<div id="btnimg2" onclick="changePage()">
+	        	<div id="text2"> Click Me !! </div>
+		 </div>		
+	  </div>
+	  
+	  <div id="div3"> Hi! Good Evening!!!! How are you doing ?
+		<div id="btnimg3" onclick="changePage()"> 
+			<div id="text3"> Click Me !! </div>
+		</div>
+	  </div>
+	  
+	  <div id="div4"> Hi! How are you doing ? 
+		<div id="btnimg4" onclick="changePage()"> 
+		   <div id="text4"> Click Me !! </div>
+		</div>
+	  </div>	
+    
+    <!-- New Year 20212 Page -->
+    <div id="empty" style="visibility:hidden">
 		   <marquee id="mq1" style="left:9;top:55;"  scrollamount="2"  direction="down">
           <img style=" filter: invert(100%);" src="images/balloon_red.png"  width="10%" height="50%" />
         </marquee>
@@ -47,12 +73,7 @@
           <img src="images/bird2.gif" width="5%" height="25%" />
           <img src="images/bird2.gif" width="5%" height="25%" />
           <img src="images/bird2.gif" width="5%" height="25%" />
-        </marquee>
-
-         <!-- This bird doesn't seems to be nice  -->
-		    <!-- <marquee style="left:50;height:50;"  scrollamount="2" direction="left">
-          <img src="images/bird3.gif" width="50%" height="150%" />
-        </marquee>  -->
+        </marquee>       
 
 		    <marquee style="left:297;top:66;height:106;"  scrollamount="2" direction="right">
           <img src="images/bird7.gif"  width="30%" height="90%" />
@@ -81,8 +102,7 @@
 
 		    <marquee style="left:103;top:310;height:490;"direction="right">
           <img style="filter: grayscale(100%);" src="images/balloon_red.png"  width="50%" height="60%" />
-        </marquee> 
-        </div>
+        </marquee>        
       
 
 		<div style="position:absolute;top:15%; left:50%;">		
@@ -93,12 +113,6 @@
         </p>
 		</div>		
 		</div>
-
-
-
-
-
-
- 
+    </div> 
 </body>
 </html>
