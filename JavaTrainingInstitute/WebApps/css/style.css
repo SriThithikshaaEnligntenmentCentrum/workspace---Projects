@@ -1,0 +1,69 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Header - Background Color - https://www.colorzilla.com/gradient-editor/ */
+.email_pwd_div, .navbar{
+  /* background: url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+ background: linear-gradient(135deg, #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%);
+}
+.navbar a.navbar-brand{
+  width: 100px;
+  /* background-color: red; */
+  text-align: center;
+  margin-right: 200px;
+  font-family: "Bokor", "sans-serif", "Arial";
+  font-size: 24px;
+  font-weight: 400;
+   
+}
+.navbar a.navbar-brand .logo_div{
+  display: inline-block;  
+  vertical-align: middle;
+}
+.navbar a.navbar-brand .logo_img{
+    width: 100%;
+    height: 100%;
+}
+/* Ref: https://www.w3docs.com/tools/code-editor/6914 */
+.multicolor_text{
+   background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   background-clip: text;
+   color: transparent;  
+}
+.navbar-nav>.nav-item>.nav-link{
+  font-family: "Archivo", "sans-serif";
+  font-weight: bold;
+  color: #22177A;
+  padding-left: 20px;
+}
+.navbar-nav>.nav-item>.nav-link:focus{
+  /* outline: none !important;
+  outline-width: 0 !important; */
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+/* Search Text Input */
+.search_input{
+  width: 250px;
+  border: 2px solid #22177A;
+  border-radius: 20px;
+}
+
+/* Search Button */
+.btn0{
+  background-color: #22177A;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-left: -90px;
+  
+}
