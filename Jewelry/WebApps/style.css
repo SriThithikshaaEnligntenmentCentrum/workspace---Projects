@@ -3,36 +3,55 @@
   margin: 0;
   box-sizing: border-box;
 }
-.navbar{
-  border-radius: 5px;
-}
+
 .header{
-  /* background-color: #FFAA1D;   */
+  /* background-color: #FFAA1D;   */  /* Yellow */
 }
-a{
-  text-decoration: none;
-}
+
+/* Padding for Vel */
 .navbar-brand{
    padding-left: 5px;
 }
+
+/* Vel */
 .header-img{
   width: 80px;
   height: 100px;
   border-radius: 50%;
 }
+
+/* Shree Thithikshaa Bijou */
 .navbar-brand .navbar-text{
   font-family: "lobster", "sans-serif";
   font-size: 2rem; 
   color: #FF1D72;
   }
-  li.nav-item{
-    padding-left: 8px;
+
+/* Navigation Menus - HOME-DIAMOND etc */
+/* To remove the blue border appearing on focus */
+/* Ref: https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element */
+.navbar-nav li.nav-item a.nav-link:focus{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
   }
-li.nav-item a.nav-link{
+
+/* Spacing between HOME-DIAMOND etc */
+.navbar-nav li.nav-item{
+    padding-left: 8px;    
+}
+
+/* HOME-DIAMOND etc */
+.navbar-nav li.nav-item a.nav-link{
   font-weight: bold;
   /* color: white; */
   text-transform: uppercase;
+  border: none;
+  outline: none;
 }
+
 form .search-input{  
   height: 40px;  
   border-radius: 60px;
@@ -40,6 +59,7 @@ form .search-input{
   border: 2px solid #FF1D72;
   margin-right: -65px; 
 }
+
 form .search-btn{
   width: 80px;
   background-color: #FF1D72;
@@ -49,10 +69,60 @@ form .search-btn{
   outline: none; 
   border: none; 
 } 
+
+/* Modal for HOME */
+#home_modal .modal-header{
+  background-color: rgba(255, 29, 114, 0.7);
+  color: white;
+  
+}
+
+#home_modal .modal-content{
+  background-color: rgba(255, 170, 29, 0.7);
+  color: white;
+  /* font-size: 18px; */
+  border-radius: 10px;
+}
+
 .carousel-item .slide-img{
   height: 600px;
   border-radius: 10px;
   object-fit: cover;
   /* overflow: hidden; */
   /* aspect-ratio: 16/9; */
+}
+
+/* Dropdown Menus */
+.header-menu:hover{
+    background-color: #FF1D72;
+    border-radius: 10px;
+    color: white;
+}
+
+a.diamond-anchor, 
+a.platinum-anchor,
+a.gold-anchor,
+a.silver-anchor{
+    background-color: #FF1D72;
+    color: white;    
+}
+
+a.diamond-anchor:hover,
+a.platinum-anchor:hover,
+a.gold-anchor:hover,
+a.silver-anchor:hover{
+  background-color: #fff;
+}
+
+/* Contact Us - Button */
+.btn0{
+  width: 80px;
+  background-color: #FF1D72; ;
+  color: white;
+  padding: 5px;  
+  border-radius: 60px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
